@@ -33,8 +33,8 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp B  &kp L  &kp D     &kp W           &kp Z        &mt COMMA SEMI  &kp F  &kp O          &kp U      &kp J     &kp BSPC
-&kp LCTRL  &kp N  &kp R  &kp T     &mt S LEFT_ALT  &kp G        &mt Y LEFT_ALT  &kp H  &kp A          &kp E      &kp I     &kp SQT
+&kp TAB    &kp B  &kp L  &kp D     &kp W           &kp Z        &mt SEMI COMMA  &kp F  &kp O          &kp U      &kp J     &kp BSPC
+&kp LCTRL  &kp N  &kp R  &kp T     &mt LEFT_ALT S  &kp G        &mt LEFT_ALT Y  &kp H  &kp A          &kp E      &kp I     &kp SQT
 &kp LSHFT  &kp Q  &kp X  &kp M     &kp C           &kp V        &kp K           &kp P  &kp PERIOD     &kp MINUS  &kp FSLH  &kp ESC
                          &kp LGUI  &mo 1           &kp SPACE    &kp RET         &mo 2  &kp BACKSPACE
             >;
