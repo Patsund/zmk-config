@@ -31,12 +31,12 @@
             key-positions = <10 11>;
         };
 
-        qu-combo {
+        qu_combo {
             bindings = <&qu>;
             key-positions = <25 26>;
         };
 
-        Qu-combo {
+        capital_qu_combo {
             bindings = <&capitalQu>;
             key-positions = <24 25 26>;
         };
