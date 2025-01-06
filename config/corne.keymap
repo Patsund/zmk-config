@@ -30,6 +30,16 @@
             bindings = <&ue>;
             key-positions = <10 11>;
         };
+
+        qu-combo {
+            bindings = <&qu>;
+            key-positions = <25 26>;
+        };
+
+        Qu-combo {
+            bindings = <&capitalQu>;
+            key-positions = <24 25 26>;
+        };
     };
 
     macros {
@@ -39,6 +49,22 @@
             bindings = <&macro_tap>, <&kp U &kp E>;
 
             label = "UE";
+        };
+
+        qu: qu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp Q &kp U>;
+
+            label = "QU";
+        };
+
+        capitalQu: capitalQu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LS(Q) &kp U>;
+
+            label = "CAPITALQU";
         };
     };
 
