@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    tapping-term-ms = <300>;
+    tapping-term-ms = <175>;
     flavor = "tap-preferred";
 };
 
@@ -40,6 +40,26 @@
             bindings = <&capitalQu>;
             key-positions = <24 25 26>;
         };
+
+        ao {
+            bindings = <&kp LA(A)>;
+            key-positions = <18 20>;
+        };
+
+        oe {
+            bindings = <&kp LA(O)>;
+            key-positions = <18 8>;
+        };
+
+        mbcombo {
+            bindings = <&mb>;
+            key-positions = <1 4>;
+        };
+
+        mblcombo {
+            bindings = <&mbl>;
+            key-positions = <1 2 4>;
+        };
     };
 
     macros {
@@ -65,6 +85,22 @@
             bindings = <&macro_tap>, <&kp LS(Q) &kp U>;
 
             label = "CAPITALQU";
+        };
+
+        mb: mb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp M &kp B>;
+
+            label = "MB";
+        };
+
+        mbl: mbl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp M &kp B &kp L>;
+
+            label = "MBL";
         };
     };
 
@@ -110,7 +146,7 @@
 
             bindings = <
 &kp TAB    &kp EXCL   &kp AT        &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp TILDE  &kp QUESTION  &kp SEMI  &kp COLON  &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LCTRL  &kp TILDE  &kp QUESTION  &kp SEMI  &kp COLON  &kp SLASH    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &kp F1     &kp F2        &kp F7    &kp F8     &kp F9       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                     &kp LGUI  &trans     &kp SPACE    &kp RET    &trans     &kp RALT
             >;
