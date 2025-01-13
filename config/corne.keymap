@@ -28,7 +28,7 @@
 
         ue_combo {
             bindings = <&ue>;
-            key-positions = <10 11>;
+            key-positions = <9 10>;
         };
 
         qu_combo {
