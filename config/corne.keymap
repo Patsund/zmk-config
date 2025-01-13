@@ -60,6 +60,11 @@
             bindings = <&mbl>;
             key-positions = <1 2 4>;
         };
+
+        jicombo {
+            bindings = <&ji>;
+            key-positions = <10 11>;
+        };
     };
 
     macros {
@@ -101,6 +106,14 @@
             bindings = <&macro_tap>, <&kp M &kp B &kp L>;
 
             label = "MBL";
+        };
+
+        ji: ji {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp J &kp I>;
+
+            label = "JI";
         };
     };
 
