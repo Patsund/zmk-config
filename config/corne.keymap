@@ -65,6 +65,16 @@
             bindings = <&ji>;
             key-positions = <10 11>;
         };
+
+        Uecombo {
+            bindings = <&Ue>;
+            key-positions = <24 9 10>;
+        };
+
+        screenshot {
+            bindings = <&kp LS(LC(LG(NUMBER_4)))>;
+            key-positions = <37 24 4>;
+        };
     };
 
     macros {
@@ -114,6 +124,21 @@
             bindings = <&macro_tap>, <&kp J &kp I>;
 
             label = "JI";
+        };
+
+        Ue: Ue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LS(U) &kp E>;
+
+            label = "UE";
+        };
+
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(LG(NUMBER_4)))>;
+            label = "SCREENSHOT";
         };
     };
 
